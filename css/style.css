@@ -346,17 +346,33 @@ section {
 }
 
 .servicio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 700;
-  font-size: 0.9rem;
-  color: var(--azul-oscuro);
+  font-size: 0.88rem;
+  color: #fff;
   align-self: flex-start;
-  border-bottom: 2px solid var(--dorado);
-  padding-bottom: 2px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  background: var(--azul-oscuro);
+  padding: 12px 22px;
+  border-radius: 999px;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.servicio-card--featured .servicio-link {
+  background: var(--dorado);
+  color: var(--azul-oscuro);
 }
 
 .servicio-link:hover {
-  color: var(--dorado);
+  transform: translateY(-1px);
+  background: var(--dorado);
+  color: var(--azul-oscuro);
+}
+
+.servicio-card--featured .servicio-link:hover {
+  background: var(--azul-oscuro);
+  color: #fff;
 }
 
 @media (max-width: 860px) {
