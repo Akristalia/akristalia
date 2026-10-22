@@ -481,6 +481,34 @@ section {
   transform: scale(1.06);
 }
 
+/* Antes y Después */
+.antes-despues-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.antes-despues-item {
+  margin: 0;
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  background: #fff;
+}
+
+.antes-despues-item img {
+  width: 100%;
+  display: block;
+}
+
+.antes-despues-item figcaption {
+  padding: 16px 24px;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+  font-size: 1rem;
+  border-top: 3px solid var(--dorado);
+}
+
 /* Testimonials */
 .testimonials-grid {
   display: grid;
